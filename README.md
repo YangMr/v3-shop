@@ -14,6 +14,25 @@ npm init vite@latest <project-name> -- --template vue
 
 ### 2.2 引入ElementPlus和基本使用
 
+- 安装`element-plus`
+
+```cmd
+npm install element-plus --save
+```
+
+- 在`mian.js`中集成`element-plus`
+
+```javascript
+import { createApp } from 'vue'
+import ElementPlus from 'element-plus'
+import 'element-plus/dist/index.css'
+import App from './App.vue'
+
+const app = createApp(App)
+app.use(ElementPlus)
+app.mount('#app')
+```
+
 ### 2.3 引入windicss工具库和配置,安装代码提示
 
 ### 2.4 windicss小案例和@apply简化代码
